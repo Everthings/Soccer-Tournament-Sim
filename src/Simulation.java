@@ -103,7 +103,7 @@ public class Simulation extends JPanel{
 	public void generateChance(Teams t1, Teams t2, double odds){
 		if(r.nextDouble() <= odds){
 			if(r.nextDouble() < teamOneScoringRate){
-				if(teamTwoScoringRate > decreaseIncrementEveryGoal + 0.1){
+				if(teamTwoScoringRate > decreaseIncrementEveryGoal + 0.2){
 					teamOneScoringRate -= decreaseIncrementEveryGoal;
 				}
 				t1score++;
@@ -113,7 +113,7 @@ public class Simulation extends JPanel{
 			}
 		}else{
 			if(r.nextDouble() < teamOneScoringRate){
-				if(teamTwoScoringRate > decreaseIncrementEveryGoal + 0.1){
+				if(teamTwoScoringRate > decreaseIncrementEveryGoal + 0.2){
 						teamTwoScoringRate -= decreaseIncrementEveryGoal;
 				}
 				
