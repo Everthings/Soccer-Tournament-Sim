@@ -52,7 +52,7 @@ public class Simulation extends JPanel{
 			advantage = 1;
 		}
 		
-		double odds = (home.getProbability() / (away.getProbability() + home.getProbability()))  + ((advantage/100.0) * 2);
+		double odds = (home.getProbability() / (away.getProbability() + home.getProbability()));
 		
 		if(odds > 0.975){
 			odds = 0.975;
